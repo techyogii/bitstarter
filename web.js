@@ -6,12 +6,6 @@ fs=require('fs');
 
 app.get('/', function(request, response) {
   response.send('Hello World22push!');
-fs.readline('./index.html',function(err,html){
-if(err){
-	throw err;
-}
-}
-
 
 });
 
