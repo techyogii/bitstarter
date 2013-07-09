@@ -6,6 +6,12 @@ var fs=require('fs');
 
 app.get('/', function(request, response) {
 response.send('Hello World22push!');
+
+fs.readFile('/etc/passwd', function (err, data) {
+  if (err) throw err;
+  console.log(data);
+});
+
 fs.readFileSync(' /home/ubuntu/repos/bitstarter/index.html',function (err, data) {
   if (err) throw err;
   console.log(data);
