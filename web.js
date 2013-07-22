@@ -10,8 +10,12 @@ var fs=require('fs');
 var data = fs.readFileSync("index.html", "utf8");
 
 app.get('/', function(request, response) {
+<<<<<<< HEAD
 response.send(data);
 
+=======
+  response.send('Hello Universe! I am King of the Amazon !');
+>>>>>>> f7d9c6321e60b979c7d29b4401fd842d42093f22
 });
 
 
